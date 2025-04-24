@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+          
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+          
+    .header, .footer {
+      background-color: #e0e0e0;
+      padding: 10px;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+    }
+          
+    .main {
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      background-color: rgb(245, 245, 245);
+          }
+          
+    .box {
+      background-color: rgb(144, 227, 238);
+      flex: 1;
+      margin: 0 5px;
+      padding: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .box2 {
+      background-color: rgb(172, 144, 238);
+      flex: 1;
+      margin: 0 5px;
+      padding: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .box3 {
+      background-color: rgb(238, 144, 183);
+      flex: 1;
+      margin: 0 5px;
+      padding: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+          
+    .box:first-child {
+      margin-left: 0;
+    }
+          
+    .box:last-child {
+      margin-right: 0;
+    }
+          
+    </style>
+
+</head>
+<body>
+    <header class="header">頁首</header>
+  <main class="main">
+    <div class="box">區塊1</div>
+    <div class="box2">區塊2</div>
+    <div class="box3">區塊3</div>
+  </main>
+  <footer class="footer">頁尾</footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>花朵展示</title>
+  <link rel="stylesheet" href="style.css">
+  
+<style>
+    body {
+        font-family: sans-serif;
+        padding: 20px;
+      }
+      
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 三欄 */
+        grid-template-rows: auto auto; /* 兩列 */
+        gap: 10px;
+        max-width: 800px;
+      }
+      
+      .title {
+        background-color: rgb(0, 140, 255);
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+      }
+      
+      .image {
+        background-color: rgb(255, 96, 96);
+        padding: 10px;
+        text-align: center;
+      }
+      
+      .image img {
+        max-width: 100%;
+        height: auto;
+      }
+      
+</style>
+
+</head>
+<body>
+  <h1>作業</h1>
+  <div class="grid-container">
+    <div class="title">暹羅貓Siamese cat</div>
+    <div class="title">緬因貓</div>
+    <div class="title">斯芬克斯貓Sphynx</div>
+
+    <div class="image"><img src="tmp.jpg" alt="暹羅貓"></div>
+    <div class="image"><img src="bd.jpg" alt="緬因貓"></div>
+    <div class="image"><img src="kh.jpg" alt="斯芬克斯貓"></div>
+  </div>
+</body>
+</html>
